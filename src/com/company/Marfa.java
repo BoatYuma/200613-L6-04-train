@@ -1,6 +1,15 @@
 package com.company;
 
-public class Marfa extends Vagon{
+public class Marfa extends Vagon {
 
-    final int COLETE_POSTALE=400;
+    private static final int CAPACITATE_COLETE_POSTALE = 400;
+
+    public static int getCapacitateColetePostale() {
+        return CAPACITATE_COLETE_POSTALE;
+    }
+    public static int getCapacitatePasageri() {
+        return 0;
+    }
+
+
 }
