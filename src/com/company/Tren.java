@@ -13,9 +13,11 @@ public class Tren {
     public boolean Equals(Tren tren) {
 
         int tren1TotalColetePostale = 0;
-        for (int i = 0; i < 15; i++)
-            tren1TotalColetePostale=tren.vagoane[i].getCapacitateColetePostale()+tren1TotalColetePostale;
-
+        for (int i = 0; i < 15; i++) {
+            if (tren.vagoane[i]!=null)
+            tren1TotalColetePostale = tren.vagoane[i].getCapacitateColetePostale() + tren1TotalColetePostale;
+//sau cu instanceOf
+        }
         for (int j = 0; j < 15; j++);
 
     }
